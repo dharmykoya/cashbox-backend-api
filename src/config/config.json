@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "SA",
+    "password": "Solomon2019",
+    "database": "cashbox",
+    "host": "127.0.0.1",
+    "dialect": "mssql",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "SA",
+    "password": "Solomon2019",
+    "database": "cashbox",
+    "host": "127.0.0.1",
+    "dialect": "mssql",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "SA",
+    "password": "Solomon2019",
+    "database": "cashbox",
+    "host": "127.0.0.1",
+    "dialect": "mssql",
+    "operatorsAliases": false
+  }
+}
