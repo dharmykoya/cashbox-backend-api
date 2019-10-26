@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run db-migration && npm run clean && npm run babel-build",
+    "db-migration": "sequelize db:migrate",
+    "clean": "rm -rf dist",
+    "babel-build": "babel src -d dist && node dist/index"
   },
   "keywords": [
     "mssql",
@@ -25,6 +29,7 @@
     "express": "^4.17.1",
     "mssql": "^5.1.0",
     "sequelize": "^5.21.1",
+    "sequelize-cli": "^5.5.1",
     "tedious": "^6.4.0"
   },
   "devDependencies": {
