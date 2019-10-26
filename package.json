@@ -6,10 +6,10 @@
   "scripts": {
     "start": "nodemon --exec babel-node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd src && npm run db-migration && npm run clean && npm run babel-build",
-    "db-migration": "sequelize db:migrate",
+    "build": "npm run db-migration && npm run clean && npm run babel-build",
     "clean": "rm -rf dist",
-    "babel-build": "babel src -d dist && node dist/index"
+    "babel-build": "babel src -d dist && node dist/index",
+    "db-migration": "sequelize db:migrate"
   },
   "keywords": [
     "mssql",
